@@ -11,7 +11,7 @@ import  Header  from './components/header/header';
 
 function App() {
   const { pathname } = useLocation();  
-
+  document.body.classList.remove("bg-blue");
   return (
       <div className="container-fluid">
           {pathname.slice(0, -1) !== "" && <Header /> }         

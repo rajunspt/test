@@ -6,7 +6,7 @@ function UsersList({ match }) {
     const [users, setUsers] = useState([]);
 
     //hook to retrive the all user details
-    useEffect(() => {
+    useEffect(() => {       
         userService.getAll().then(x => setUsers(x));
     }, []);
 

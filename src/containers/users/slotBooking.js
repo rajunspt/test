@@ -21,18 +21,23 @@ function SlotBooking({ history, match }) {
             setUser(user);
         });
 
-    });
+    }, []);
+
+
 
     const handleSelect = ({ start, end }) => {
         const title = window.prompt('New Event name')
-        if (title)
-            eventsData.push({
-                start,
-                end,
-                title,
-            })
-        setEventsData(eventsData);
-
+        if (title) {
+            const updatedEventsData = [
+                ...eventsData,
+                {
+                    start,
+                    end,
+                    title,
+                },
+            ];
+            setEventsData(updatedEventsData);
+        }
     }
 
     const handleSave = () => {
@@ -41,12 +46,11 @@ function SlotBooking({ history, match }) {
         postData.startDate = eventsData[0].start;
         postData.endDate = eventsData[0].end;
         userService.create(postData).then(data => {
-            // window.location = '/users';
             toast.success("Record saved successfully", { hideProgressBar: true, autoClose: 2000 });
+
         });
 
     }
-
     return (
         <div>
             <ToastContainer />

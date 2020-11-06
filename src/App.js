@@ -17,7 +17,7 @@ function App() {
           {pathname.slice(0, -1) !== "" && <Header /> }         
           <div>
               <Switch>                 
-                  <Route exact path="/" component={Login} />
+                  <Route exact path="/" component={UsersList} />
                   <Route path="/home" component={Home} />
                   <Route path="/users" component={UsersList} />
                   <Route path="/slotBooking/:id" component={SlotBooking} />

@@ -13,7 +13,7 @@ function App() {
   document.body.classList.remove("bg-blue");
   return (
       <div className="container-fluid">
-          {pathname.slice(0, -1) !== "" && <Header /> }         
+          <Header />       
           <div>
               <Switch>                 
                   <Route exact path="/" component={UsersList} />

@@ -6,7 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { userService } from '../../services/userServices';
 
-function SlotBooking({ history, match }) {
+function SlotBooking({ match }) {
     //Initial Variables
     const { id } = match.params;
     const localizer = momentLocalizer(moment)
@@ -20,7 +20,7 @@ function SlotBooking({ history, match }) {
         userService.getById(id).then(user => {
             setUser(user);
         });
-
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
 
@@ -45,12 +45,13 @@ function SlotBooking({ history, match }) {
         postData.userId = user.id;
         postData.startDate = eventsData[0].start;
         postData.endDate = eventsData[0].end;
-        userService.create(postData).then(data => {
+        userService.create(postData,id).then(data => {
             toast.success("Record saved successfully", { hideProgressBar: true, autoClose: 2000 });
 
         });
 
     }
+    console.log(eventsData);
     return (
         <div>
             <ToastContainer />

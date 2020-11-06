@@ -3,7 +3,6 @@ import {Switch, Route, Redirect,useLocation } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
 import 'popper.js';
 import './styles/App.css';
-import  Login  from './containers/login/Login'
 import  Home  from './containers/home/Home'
 import  UsersList  from './containers/users/usersList'
 import  SlotBooking  from './containers/users/slotBooking'

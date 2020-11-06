@@ -16,8 +16,8 @@ function getById(id) {
     return apiClient.get(`${baseUrl}/${id}`);
 }
 
-function create(params) {
-    return apiClient.post(baseUrl, params);
+function create(params,id) {
+    return apiClient.post(`${baseUrl}/${id}`, params);
 }
 
 

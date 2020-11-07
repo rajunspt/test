@@ -1,6 +1,7 @@
 import { apiClient } from '../util/apiClient';
 
 const baseUrl = 'https://reqres.in/api/users';
+const posteUrl = 'http://127.0.0.1:8081/users';
 
 export const userService = {
     getAll,
@@ -17,7 +18,7 @@ function getById(id) {
 }
 
 function create(params,id) {
-    return apiClient.post(`${baseUrl}/${id}`, params);
+    return apiClient.post(`${posteUrl}/${id}`, params);
 }
 
 

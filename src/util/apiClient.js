@@ -19,13 +19,13 @@ function get(url) {
 }
 
 function post(url, body) {
-    const requestOptions = {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(body)
-    };
-    return axios.post(url, requestOptions)
-        .then(response => response.data)
+    // const requestOptions = {
+    //     method: 'POST',
+    //     headers: { 'Content-Type': 'application/json' },
+    //     body: body
+    // };
+    return axios.post(url, body)
+        .then(response => response)
         .catch((error) => {
           throw error;
         });

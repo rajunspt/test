@@ -38,3 +38,7 @@ body {
   background-color: #00578e!important; 
   color: white;
 }
+
+.rbc-month-view{
+  height:400px !important;
+}

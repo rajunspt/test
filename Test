@@ -1,0 +1,306 @@
+
+<main class="main">
+
+  <div class="content" style="margin:30px">
+    <div class="card">
+      <div class="card-header" style="background-color: #02adcf;">
+        <div class="row">
+          <div class="col-8">
+            <div class="row g-2 align-items-center">
+              <div class="col-auto">
+                <label for="inputPassword6" class="col-form-label col-label">Quarter:</label>
+              </div>
+              <div class="col-auto">
+                <select style="width: 150px;" class="form-select form-select-sm" aria-label=".form-select-sm example">
+
+                  <option value="1">Q1</option>
+                  <option value="2">Q2</option>
+                  <option value="3">Q3</option>
+                </select>
+              </div>
+              <div class="col-auto">
+              </div>
+              <div class="col-auto">
+                <label for="inputPassword6" class="col-form-label col-label">Year:</label>
+              </div>
+              <div class="col-auto">
+                <select style="width: 150px;" class="form-select form-select-sm" aria-label=".form-select-sm example">
+
+                  <option value="1">2024</option>
+                  <option value="2">2023</option>
+                  <option value="3">2022</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="row g-2 align-items-right">
+              <div class="col-auto">
+                <label for="inputPassword6" class="col-form-label col-label">Report Id:</label>
+              </div>
+              <div class="col-auto">
+                <label for="inputPassword6" class="col-form-label col-label">12222</label>
+              </div>
+
+              <div class="col-auto" style="margin-left: 30px;">
+                <label for="inputPassword6" class="col-form-label col-label">Assign Date:</label>
+              </div>
+              <div class="col-auto">
+                <label for="inputPassword6" class="col-form-label col-label">2023-05-20</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-6">
+            <div class="row">
+              <form>
+                <fieldset>
+                  <div class="row mb-3">
+                    <label for="inputEmail" class="col-sm-4 col-form-label">BANNER TITLE:</label>
+                    <div class="col-sm-8">
+                      <input type="email" class="form-control" id="inputEmail">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="inputPassword" class="col-sm-4 col-form-label">BACKGROUND IMAGE:</label>
+                    <div class="col-sm-8">
+                      <input type="password" class="form-control" id="inputPassword">
+                    </div>
+                  </div>
+
+
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <form>
+                <fieldset>
+                  <div class="row mb-3">
+                    <label for="inputEmail" class="col-sm-4 col-form-label">DESCRIPTION TEXT:</label>
+                    <div class="col-sm-8">
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                  </div>
+
+
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+   <br/>
+
+
+    <div class="card p-3 shadow" style="max-width: 100%;">
+      <nav>
+        <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+          <button class="nav-link tabsActive active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+            type="button" role="tab" aria-controls="nav-home" aria-selected="true">TOPLINE HIGHLIGHTS</button>
+          <button class="nav-link tabs" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button"
+            role="tab" aria-controls="nav-profile" aria-selected="false">MEASUREMENTS REASULTS</button>
+          <button class="nav-link tabs" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button"
+            role="tab" aria-controls="nav-contact" aria-selected="false">AUDIENCE REACH FRAMEWORK</button>
+            <button class="nav-link tabs" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button"
+            role="tab" aria-controls="nav-profile" aria-selected="false">MEASUREMENTS REASULTS</button>
+         
+        </div>
+      </nav>
+      <div class="tab-content p-3 border bg-light" id="nav-tabContent">
+        <div class="tab-pane fade active show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+          <p><strong>This is some placeholder content the Home tab's associated content.</strong>
+            Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps
+            classes to control the content visibility and styling. You can use it with tabs, pills, and any
+            other <code>.nav</code>-powered navigation.</p>
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+          <p><strong>This is some placeholder content the Profile tab's associated content.</strong>
+            Clicking another tab will toggle the visibility of this one for the next.
+            The tab JavaScript swaps classes to control the content visibility and styling. You can use it with
+            tabs, pills, and any other <code>.nav</code>-powered navigation.</p>
+        </div>
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+          <p><strong>This is some placeholder content the Contact tab's associated content.</strong>
+            Clicking another tab will toggle the visibility of this one for the next.
+            The tab JavaScript swaps classes to control the content visibility and styling. You can use it with
+            tabs, pills, and any other <code>.nav</code>-powered navigation.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <mat-card class="example-card">
+      <mat-card-content>
+        <mat-grid-list cols="12" rowHeight="2:1">
+          <mat-grid-tile colspan="3">
+            <mat-label>Quarter:&nbsp;&nbsp;</mat-label>
+            <mat-form-field appearance="fill" class="custom-select">
+              <mat-select [(value)]="selectedQuarter" panelClass="my-panel">
+                <mat-option *ngFor="let quarter of quarters" [value]="quarter.value">
+                  {{ quarter.viewValue }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </mat-grid-tile>
+          <mat-grid-tile colspan="3">
+            <mat-label>Year:&nbsp;&nbsp;</mat-label>
+            <mat-form-field appearance="fill" class="custom-select">
+              <mat-select [(value)]="selectedYear">
+                <mat-option *ngFor="let year of years" [value]="year">
+                  {{ year }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </mat-grid-tile>
+          <mat-grid-tile [colspan]="6" [rowspan]="1">
+            <div class="report-details">
+              <span>Report ID: {{ reportId }}</span>&nbsp;&nbsp;&nbsp;&nbsp;
+              <span>Assigned Date: {{ assignedDate | date }}</span>
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </mat-card-content>
+
+    </mat-card> -->
+  </div>
+</main>
+
+------------------------
+
+
+.example-card {
+    max-width: 100%;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  .mat-select-value {
+    max-width: 100%;
+    width: auto;
+    height: 10px;
+} 
+.my-panel {
+    background: orange;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 350px !important;
+    }
+.custom-select {
+    width: 150px; /* Adjust the width as needed */
+  }
+  
+  .custom-select .mat-form-field-wrapper {
+    padding-bottom: 0; /* Adjust padding as needed */
+  }
+  
+  .custom-select .mat-form-field-flex {
+    height: 5px; /* Adjust height as needed */
+  }
+  
+  .custom-select .mat-select-trigger {
+    height: 12px; /* Match the height */
+    line-height: 12px; /* Center align the text vertically */
+  }
+  
+  .custom-select .mat-select-value {
+    font-size: 5px; /* Adjust font size as needed */
+  }
+  
+  .custom-select .mat-select-arrow {
+    font-size: 5px; /* Adjust arrow size as needed */
+  }
+  
+  .col-label{
+    color: white;
+  }
+
+  body {
+    padding : 10px ;
+    
+  }
+  
+  #exTab1 .tab-content {
+    color : white;
+    background-color: #428bca;
+    padding : 5px 15px;
+  }
+  
+  #exTab2 h3 {
+    color : white;
+    background-color: #428bca;
+    padding : 5px 15px;
+  }
+  
+  /* remove border radius for the tab */
+  
+  #exTab1 .nav-pills > li > a {
+    border-radius: 0;
+  }
+  
+  /* change border radius for the tab , apply corners on top*/
+  
+  #exTab3 .nav-pills > li > a {
+    border-radius: 4px 4px 0 0 ;
+  }
+  
+  #exTab3 .tab-content {
+    color : white;
+    background-color: #428bca;
+    padding : 5px 15px;
+  }
+  
+  .tabs{
+    border: 1px solid;
+    background-color: #b8cbdc;
+    color: #86909d;
+    margin-left: 2px;
+  }
+
+  .tabsActive{
+    border: 1px solid !important;
+    background-color: #12538b !important;
+    color: white !important;
+    margin-left: 2px;
+  }
+  
+  
+  
+  --------------------------------
+
+ title = 'store-admin-panel123';
+  selectedQuarter: any = "Q1";
+  selectedYear: any = 2024;
+  reportId = '20220622_182309';
+  assignedDate = new Date(2022, 5, 22);  // June 22, 2022
+  tiles = [
+    {title: 'Tile 1', content: 'Content 1'},
+    {title: 'Tile 2', content: 'Content 2'},
+    {title: 'Tile 3', content: 'Content 3'},
+    {title: 'Tile 4', content: 'Content 4'},
+    {title: 'Tile 5', content: 'Content 5'},
+    {title: 'Tile 6', content: 'Content 6'},
+    {title: 'Tile 7', content: 'Content 7'},
+    {title: 'Tile 8', content: 'Content 8'},
+  ];
+  quarters = [
+    { value: 'Q1', viewValue: 'Q1' },
+    { value: 'Q2', viewValue: 'Q2' },
+    { value: 'Q3', viewValue: 'Q3' },
+    { value: 'Q4', viewValue: 'Q4' }
+  ];
+
+  years = Array.from({ length: 20 }, (_, i) => new Date().getFullYear() - i);

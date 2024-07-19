@@ -1,4 +1,4 @@
-
+ "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 <main class="main">
 
   <div class="content" style="margin:30px">

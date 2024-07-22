@@ -1,4 +1,5 @@
-  <div class="content" style="margin:30px">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="content" style="margin:30px">
     <div class="card">
       <div class="card-header" style="background-color: #02adcf;">
         <div class="row">

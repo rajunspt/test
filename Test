@@ -1,19 +1,540 @@
-<div class="row">
-      <div class="col-6">
-        <button type="button" class="btn btn-outline-secondary btn-sm btn-small ms-1"> <i class="fa fa-arrow-left"></i> Back</button>
-      </div>
-      <div class="col-6  text-end">
-        <button type="button" class="btn btn-link btn-sm" style="text-decoration: none;"> <i class="fa fa-download"></i> Export As Template</button>
-        <button type="button" class="btn btn-link btn-sm ms-1" style="text-decoration: none;"><i class="fa fa-upload"></i>Import As Template</button>
+  <div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-12 text-center">
+        <p *ngIf="sidebar2" style="color:#417aa8;font-size: 23px; font-weight: 500;">January 2024 Topline Highlights <br> 
+        <p *ngIf="sidebar3" style="color: #417aa8; font-size: 23px; font-weight: 500">
+          Measurement Results <br />
+        </p>
+        <p *ngIf="sidebar4" style="color: #417aa8; font-size: 23px; font-weight: 500">
+          Audience Reach Framework <br />
+        </p>
       </div>
     </div>
+    <div class="row flex-nowrap mt-3">
+      <div class="col-auto px-0" style="padding-top: 3rem">
+        <div id="sidebar" class="collapse-horizontal border-end collapse show">
+          <div id="sidebar-nav" class="list-group border-0 rounded-0 text-sm-start min-vh-100">
+            <p class="lead ms-3">
+              Reference functionality here for section navigation <br />
+              <a href="#" style="color: #0cc4e0"> https://ondrejhomola.com/ </a>
+            </p>
+            <a href="#" class="anchortext list-group-item border-end-0 d-inline-block text-truncate"
+              data-bs-parent="#sidebar" (click)="navigation('sidebar1')" [ngClass]="{'anchortextActive':sidebar1}">
+              <i class="fa fa-circle icontext" aria-hidden="true" style="font-size: 12px" [ngClass]="{'icontextActive':sidebar1}"></i><span
+                class="ms-2">Home</span></a>
+            <a href="#" class="anchortext list-group-item border-end-0 d-inline-block text-truncate"
+              data-bs-parent="#sidebar" (click)="navigation('sidebar2')" [ngClass]="{'anchortextActive':sidebar2}">
+              <i class="fa fa-circle icontext" aria-hidden="true" style="font-size: 12px" [ngClass]="{'icontextActive':sidebar2}"></i><span
+                class="ms-2">Topline Highlights</span></a>
+            <a href="#" class="anchortext list-group-item border-end-0 d-inline-block text-truncate"
+              data-bs-parent="#sidebar" (click)="navigation('sidebar3')" [ngClass]="{'anchortextActive':sidebar3}">
+              <i class="fa fa-circle icontext" aria-hidden="true" style="font-size: 12px" [ngClass]="{'icontextActive':sidebar3}"></i><span
+                class="ms-2">Measurement Results</span></a>
+            <a href="#" class="anchortext list-group-item border-end-0 d-inline-block text-truncate"
+              data-bs-parent="#sidebar" (click)="navigation('sidebar4')" [ngClass]="{'anchortextActive':sidebar4}">
+              <i class="fa fa-circle icontext" aria-hidden="true" style="font-size: 12px" [ngClass]="{'icontextActive':sidebar4}"></i><span
+                class="ms-2">Audience Reach Framework</span></a>
+            <a href="#" class="anchortext list-group-item border-end-0 d-inline-block text-truncate"
+              data-bs-parent="#sidebar">
+              <i class="fa fa-circle icontext" aria-hidden="true" style="font-size: 12px"></i><span
+                class="ms-2">Coverage by Topic</span></a>
+            <a href="#" class="anchortext list-group-item border-end-0 d-inline-block text-truncate"
+              data-bs-parent="#sidebar">
+              <i class="fa fa-circle icontext" aria-hidden="true" style="font-size: 12px"></i><span class="ms-2"> Share
+                of Voice / Sentiments</span></a>
+            <a href="#" class="anchortext list-group-item border-end-0 d-inline-block text-truncate"
+              data-bs-parent="#sidebar">
+              <i class="fa fa-circle icontext" aria-hidden="true" style="font-size: 12px"></i><span class="ms-2">Organon
+                Timelines - Key Coverage</span></a>
+            <a href="#" class="anchortext list-group-item border-end-0 d-inline-block text-truncate"
+              data-bs-parent="#sidebar">
+              <i class="fa fa-circle icontext" aria-hidden="true" style="font-size: 12px"></i><span class="ms-2">
+                Snapshot of Global Spokespeople</span></a>
+            <a href="#" class="anchortext list-group-item border-end-0 d-inline-block text-truncate"
+              data-bs-parent="#sidebar">
+              <i class="fa fa-circle icontext" aria-hidden="true" style="font-size: 12px"></i><span class="ms-2"> Top
+                Authors and Publication list</span></a>
+            <a href="#" class="anchortext list-group-item border-end-0 d-inline-block text-truncate"
+              data-bs-parent="#sidebar">
+              <i class="fa fa-circle icontext" aria-hidden="true" style="font-size: 12px"></i><span class="ms-2">
+                Product-driven Media Moments</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="col ps-md-2 pt-2">
+        <div class="row" *ngIf="sidebar2">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 padding1">
+            <div class="card text-center w-100 h-100 p-1">
+              <div class="card-body">
+                <div class="highlight-icon">&#127758;</div>
+                <h5 class="card-title">01.</h5>
+                <p class="card-text">
+                  Global corporate initiatives, including Her Plan is Her Power
+                  and IWD, drove positive coverage in consumer and trade
+                  publications, reinforcing our
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 padding2 p-1">
+            <div class="card text-center w-100 h-100 p-1">
+              <div class="card-body">
+                <div class="highlight-icon">&#10013;</div>
+                <h5 class="card-title">02.</h5>
+                <p class="card-text">
+                  Organon's commitment to investing in women's health and
+                  women's unmet needs had the strongest thematic pull through,
+                  underscoring our focus on her
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 padding3 p-1">
+            <div class="card text-center w-100 h-100 p-1">
+              <div class="card-body">
+                <div class="highlight-icon">&#128101;</div>
+                <h5 class="card-title">03.</h5>
+                <p class="card-text">
+                  Diversity of spokespeople expanded, with nearly 50 leaders
+                  included in coverage and 151 stories included mentions/quotes
+                  from spokespeople
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 padding2 p-1">
+            <div class="card text-center w-100 h-100 p-1">
+              <div class="card-body">
+                <div class="highlight-icon">&#128202;</div>
+                <h5 class="card-title">04.</h5>
+                <p class="card-text">
+                  Increased coverage on business franchises: 22% focused on
+                  biosimilars and established brands, a 5% increase from Q4
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 padding1 p-1">
+            <div class="card text-center w-100 h-100">
+              <div class="card-body">
+                <div class="highlight-icon">&#128250;</div>
+                <h5 class="card-title">05.</h5>
+                <p class="card-text">
+                  Over half of US coverage reached key HCP audiences, while
+                  further collaboration with global markets resulted in overall
+                  increase in ex-US coverage
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" *ngIf="sidebar3">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="ms-2 anchortextActive">Coverage Overview</div>
+          </div>
+        </div>
+        <div class="row" *ngIf="sidebar3">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card text-center w-100 h-95 cardColor">
+              <div class="card-body">
+                <h5 class="card-title">34</h5>
+                <p class="card-text">Unique Stories</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card text-center w-100 h-95 cardColor">
+              <div class="card-body">
+                <h5 class="card-title">2,145</h5>
+                <p class="card-text">
+                  Organon's commitment to investing in women's health and
+                  women's
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card text-center w-100 h-95 cardColor">
+              <div class="card-body">
+                <h5 class="card-title">12</h5>
+                <p class="card-text">Diversity of spokespeople expanded,</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card text-center w-100 h-95 cardColor">
+              <div class="card-body">
+                <h5 class="card-title">31</h5>
+                <p class="card-text">Unique People Reached</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4" *ngIf="sidebar3">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="ms-2 anchortextActive">Top Inclusion</div>
+          </div>
+        </div>
+        <div class="row" *ngIf="sidebar3" style="margin-top: -1rem; margin-left: -1.8rem">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+            <div class="card text-center w-100 h-100 cardCustom">
+              <div class="card-body">
+                <div class="progress progressCustom" role="progressbar" aria-label="Example 30px high"
+                  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 10%; float: right"></div>
+                  <span class="text-end mt-1" style="color: black">13%</span>
+                  <div class="text-start w-100 mt-1 ms-3" style="color: black">
+                    Leader In Womens Health
+                  </div>
+                </div>
+
+                <div class="progress mt-3 progressCustom" role="progressbar" aria-label="Example 30px high"
+                  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                  style="height: 30px; direction: rtl; border-radius: 0px">
+                  <div class="progress-bar" style="width: 29%; float: right"></div>
+                  <span class="text-end mt-1" style="color: black">29%</span>
+                  <div class="text-start w-100 mt-1 ms-3" style="color: black">
+                    Investing in womens health and womens unmeet needs womens
+                  </div>
+                </div>
+
+                <div class="progress mt-3 progressCustom" role="progressbar" aria-label="Example 30px high"
+                  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                  style="height: 30px; direction: rtl; border-radius: 0px">
+                  <div class="progress-bar" style="width: 9%; float: right"></div>
+                  <span class="text-end mt-1" style="color: black">9%</span>
+                  <div class="text-start w-100 mt-1 ms-3" style="color: black">
+                    Womens health beyond reproductive health
+                  </div>
+                </div>
+
+                <div class="progress mt-3 progressCustom" role="progressbar" aria-label="Example 30px high"
+                  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                  style="height: 30px; direction: rtl; border-radius: 0px">
+                  <div class="progress-bar" style="width: 11%; float: right"></div>
+                  <span class="text-end mt-1" style="color: black">11%</span>
+                  <div class="text-start w-100 mt-1 ms-3" style="color: black">
+                    Leader In Womens Health
+                  </div>
+                </div>
+
+                <div class="progress mt-3 progressCustom" role="progressbar" aria-label="Example 30px high"
+                  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                  style="height: 30px; direction: rtl; border-radius: 0px">
+                  <div class="progress-bar" style="width: 25%; float: right"></div>
+                  <span class="text-end mt-1" style="color: black">25%</span>
+                  <div class="text-start w-100 mt-1 ms-3" style="color: black">
+                    Leader In Womens Health
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+            <div class="card cardCustom1">
+              <div class="card-header">Analytics/Summary/Highlights</div>
+              <div class="card-body">
+                <p class="card-text">
+                  A card is a flexible and extensible content container. It
+                  includes options for headers and footers, a wide variety of
+                  content, contextual background colors, and powerful display
+                  options. If you’re Example
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" *ngIf="sidebar4">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+            <div class="card cardCustom1 h-100" style=" background-color: #fffbff;">
+              <div class="card-body">
+                <h5 class="card-title text-center" style="font-size: 18px; color: #e30175; font-weight: 400">
+                  Global Coverage
+                </h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.Some quick example text to build on the card title and make up
+                  the bulk of the card's content.Some quick example text to build on the card title and make up
+                  the bulk of the card's content.Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+            <div class="card cardCustom1 h-100 mt-5" style=" background-color: aliceblue;">
+              <div class="card-body">
+                <h5 class="card-title text-center" style="font-size: 18px; color: #e30175; font-weight: 500">
+                  Target Audiences
+                </h5>
+                <h6 class="card-subtitle mb-2 text-muted text-center"
+                  style="color:#003366!important;font-size: 13px;font-weight: 500;">US Audiences</h6>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content. Some quick example text to build on the card title and make up
+                  the bulk of the card's content. Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+            <div class="card cardCustom1 h-100" style=" background-color:#fffbff;">
+              <div class="card-body">
+                <h5 class="card-title text-center" style="font-size: 18px; color: #e30175; font-weight: 500">
+                  Target Audiences
+                </h5>
+                <h6 class="card-subtitle mb-2 text-muted text-center"
+                  style="color:#003366!important;font-size: 13px;font-weight: 500">Ex - US Audiences</h6>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content. Some quick example text to build on the card title and make up
+                  the bulk of the card's content. Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+--------------------
+
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatCardModule } from '@angular/material/card';
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { CommonModule } from '@angular/common';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [
+    CommonModule,
+    RouterOutlet,MatSlideToggleModule,
+    MatCardModule,
+    MatSelectModule,
+    MatFormFieldModule,
+    MatGridListModule,
+    MatInputModule,
+    MatButtonModule],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.scss',
+
+})
+export class AppComponent {
+  blacked1 = true;
+  blacked2 = false;
+  blacked3 = false;
+  blacked4 = false;
+  blacked5 = false;
+  blacked6 = false;
+
+  sidebar1 = false;
+  sidebar2 = true;
+  sidebar3 = false;
+  sidebar4 = false;
+  title = 'store-admin-panel123';
+  selectedQuarter: any = "Q1";
+  selectedYear: any = 2024;
+  reportId = '20220622_182309';
+  assignedDate = new Date(2022, 5, 22);  // June 22, 2022
+  tiles = [
+    {title: 'Tile 1', content: 'Content 1'},
+    {title: 'Tile 2', content: 'Content 2'},
+    {title: 'Tile 3', content: 'Content 3'},
+    {title: 'Tile 4', content: 'Content 4'},
+    {title: 'Tile 5', content: 'Content 5'},
+    {title: 'Tile 6', content: 'Content 6'},
+    {title: 'Tile 7', content: 'Content 7'},
+    {title: 'Tile 8', content: 'Content 8'},
+  ];
+  quarters = [
+    { value: 'Q1', viewValue: 'Q1' },
+    { value: 'Q2', viewValue: 'Q2' },
+    { value: 'Q3', viewValue: 'Q3' },
+    { value: 'Q4', viewValue: 'Q4' }
+  ];
+
+  years = Array.from({ length: 20 }, (_, i) => new Date().getFullYear() - i);
+
+  open(item:any){
+    this.blacked1 = false;
+    this.blacked2 = false;
+    this.blacked3 = false;
+    this.blacked4 = false;
+    this.blacked5 = false;
+    this.blacked6 = false;
+    if(item === 'tab1'){
+      this.blacked1 = true;
+    }
+    if(item === 'tab2'){
+      this.blacked2 = true;
+    }
+    if(item === 'tab3'){
+      this.blacked3 = true;
+    }
+    if(item === 'tab4'){
+      this.blacked4 = true;
+    }
+    if(item === 'tab5'){
+      this.blacked5 = true;
+    }
+    if(item === 'tab6'){
+      this.blacked6 = true;
+    }
+  }
+
+  navigation(item:any){
+    this.sidebar1 = false;
+    this.sidebar2 = false;
+    this.sidebar3 = false;
+    this.sidebar4 = false;
+    if(item === 'sidebar1'){
+      this.sidebar1 = true;
+    }
+    if(item === 'sidebar2'){
+      this.sidebar2 = true;
+    }
+    if(item === 'sidebar3'){
+      this.sidebar3 = true;
+    }
+    if(item === 'sidebar4'){
+      this.sidebar4 = true;
+    }
+  }
+}
+-------------------------
+
+
+body {
+  background-color: #f8f9fa;
+}
+.card {
+  background-color: #003366;
+  color: white;
+  border-radius: 10px;
+  margin: 10px;
+}
+.card h5 {
+  margin-top: 20px;
+}
+.card p {
+  font-size: 14px;
+}
+.highlight-icon {
+  font-size: 30px;
+}
+.padding1{
+  padding-top: 38px !important;
+  padding-bottom: 38px !important;
+  padding-left: 5px!important;
+  padding-right: 1.4rem !important;
+   
+}
+.padding2{
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  padding-left: 5px!important;
+  padding-right: 1.4rem !important;
+    
+}
+.padding3{
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  padding-left: 5px!important;
+  padding-right: 1.4rem !important;
+   
+}
+
+
+.border-end {
+  border-right: 0px !important;
+}
+
+.anchortext{
+  color: #b7b6d0;
+  background-color: #f9f7f9;
+  font-weight: 500;
+  font-size: 13px;
+  border: none;
+}
 
 
 
-.btn-small{
-     
-    --bs-btn-padding-y: 0.10rem !important;
-    --bs-btn-padding-x: 0.4rem !important;
-    --bs-btn-font-size: 0.675rem !important;
-    --bs-btn-border-radius: var(--bs-border-radius-sm) !important;
+.icontext{
+  font-size: 12px;
+  color: #b7b6d0;
+}
+
+.anchortextActive{
+  color: #e30175;
+  background-color: #f9f7f9;
+  font-weight: 500;
+  font-size: 13px;
+  border: none;
+}
+.icontextActive{
+  font-size: 12px;
+  color: #e30175;
+}
+
+.lead{
+  font-size: 13px !important;
+  width: 19rem !important;
+  color: #7c7b7c;
+}
+
+.col-lg-2 {
+  flex: 0 0 auto;
+  width: 19.666667% !important;
+}
+
+.cardColor{
+  background-color:#1c4198 !important;
+  color: white !important
+}
+
+.h-95{
+  height: 88% !important;
+}
+
+.progress-bar{
+  background-color: #e30175!important;
+}
+.progress-right .progress-bar {
+  float: right;
+}
+
+.progressCustom{
+  height: 30px!important;
+  direction: rtl!important;;
+  border-radius: 0px!important;
+  background-color: white!important;
+  border: 0.155rem solid #cbc9cb!important;
+}
+
+.cardCustom{
+  background-color: #f9f7f9;  
+  border-radius: 0px;
+  border: none !important;
+}
+
+.cardCustom1 { 
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  margin: 10px;
+  height: 82%;
+  margin-top:25px;
 }
